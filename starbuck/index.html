@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Star Bucks</title>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" href="css/font-awesome.css"> 
+
+
+
+</head>
+<body onload="myFunction()" style="margin:0;">
+<div class="wrapper">
+
+
+		 <div id="loader"></div>
+
+
+
+<script>
+var myVar;
+
+function myFunction() {
+    myVar = setTimeout(showPage, 15000);
+}
+
+function showPage() {
+  document.getElementById("loader").style.display = "none";
+  document.getElementById("myDiv").style.display = "block";
+}
+</script>
+
+
+	<div class="header">My Cards</div>
+		<div class="reword">
+			<img src="image/rewords.jpg">
+			<a href="benefit.html"><button class="reword-btn">Rewords</button></a>
+		</div>
+
+		<div class="background">
+
+			<div class="cards"><img src="image/card2.png"></div>
+
+					<div class="flip-container">
+						<button class="touch-btn"><i class="fa-hand-pointer-o"><br></i>Touch To Pay</button>
+						<div class="flipper">
+				
+							<div class="back">
+								<button class="touch-btn">Touch <br>When <br>Done</button>
+								<img src="image/card3.png">
+								<!-- back content -->
+								<div class="scannow"> <img src="image/starbucks-icon-29.png"> <br>Scan now</div>
+							</div>
+						</div>
+					</div>
+
+
+			
+			<div class="baht">baht 205.00 <br>As of 2560-02-22 19:43
+				<ul>
+						  <li class="dropdown">
+								<a href="javascript:void(0)" class="dropbtn" ><button class="baht-btn">Manage</button></a>
+				<div class="dropdown-content">
+						      <a href="index.html">Refresh Balance</a>
+						      <a href="transection.html">Transection</a>
+						      <a href="index.html">Cancel</a>
+						    </div>
+						  </li>
+						</ul>
+			</div>
+			<div class="register">Registered<br>6080152441596222
+				<a href="mycard.html"><button class="register-btn" >Add a Card</button></a>
+			</div>
+
+
+
+
+
+
+		</div>
+			<div class="menu"><!-- <img src="image/menu.png"> -->
+				<a href="#"><div class="menu-1"><i class="fa-home"></i><br>HOME</div></a>
+				<div class="ac-page"><a href="index.html"><div class="menu-1"><i class="fa-id-card"></i><br>CARDS</div></a></div>   
+				<a href="#"><div class="menu-1"><i class="fa-coffee"></i><br>STORES</div></a>
+				<a href="#"><div class="menu-1"><i class="fa-commenting"></i><br>MESSAGES</div></a>
+				<a href="#"><div class="menu-1"><i class="fa-ellipsis-h"></i><br>MORE</div></a>
+			</div>
+</div>
+</body>
+</html>
